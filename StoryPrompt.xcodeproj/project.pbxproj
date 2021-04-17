@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB6C1492260F6979001FAEEF /* StoryPromptEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C1491260F6979001FAEEF /* StoryPromptEntry.swift */; };
+		CB6C1495260F69B8001FAEEF /* StoryPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C1494260F69B8001FAEEF /* StoryPrompt.swift */; };
+		CBE1C297262199B10052242A /* StoryPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE1C296262199B10052242A /* StoryPromptViewController.swift */; };
+		CBE1C29C2621A5BC0052242A /* StoryPromptTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE1C29B2621A5BC0052242A /* StoryPromptTableTableViewController.swift */; };
 		CBE68A6C26065927007EF422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE68A6B26065927007EF422 /* AppDelegate.swift */; };
 		CBE68A6E26065927007EF422 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE68A6D26065927007EF422 /* SceneDelegate.swift */; };
 		CBE68A7026065927007EF422 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE68A6F26065927007EF422 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB6C1491260F6979001FAEEF /* StoryPromptEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPromptEntry.swift; sourceTree = "<group>"; };
+		CB6C1494260F69B8001FAEEF /* StoryPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPrompt.swift; sourceTree = "<group>"; };
+		CBE1C296262199B10052242A /* StoryPromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPromptViewController.swift; sourceTree = "<group>"; };
+		CBE1C29B2621A5BC0052242A /* StoryPromptTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPromptTableTableViewController.swift; sourceTree = "<group>"; };
 		CBE68A6826065927007EF422 /* StoryPrompt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryPrompt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE68A6B26065927007EF422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE68A6D26065927007EF422 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBE1C2952621998F0052242A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBE1C29B2621A5BC0052242A /* StoryPromptTableTableViewController.swift */,
+				CBE1C296262199B10052242A /* StoryPromptViewController.swift */,
+				CBE68A6F26065927007EF422 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		CBE68A5F26065927007EF422 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +74,25 @@
 		CBE68A6A26065927007EF422 /* StoryPrompt */ = {
 			isa = PBXGroup;
 			children = (
+				CBE1C2952621998F0052242A /* Controllers */,
+				CBE68A80260659E2007EF422 /* Model */,
 				CBE68A6B26065927007EF422 /* AppDelegate.swift */,
 				CBE68A6D26065927007EF422 /* SceneDelegate.swift */,
-				CBE68A6F26065927007EF422 /* ViewController.swift */,
 				CBE68A7126065927007EF422 /* Main.storyboard */,
 				CBE68A7426065929007EF422 /* Assets.xcassets */,
 				CBE68A7626065929007EF422 /* LaunchScreen.storyboard */,
 				CBE68A7926065929007EF422 /* Info.plist */,
 			);
 			path = StoryPrompt;
+			sourceTree = "<group>";
+		};
+		CBE68A80260659E2007EF422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C1491260F6979001FAEEF /* StoryPromptEntry.swift */,
+				CB6C1494260F69B8001FAEEF /* StoryPrompt.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE1C297262199B10052242A /* StoryPromptViewController.swift in Sources */,
 				CBE68A7026065927007EF422 /* ViewController.swift in Sources */,
+				CBE1C29C2621A5BC0052242A /* StoryPromptTableTableViewController.swift in Sources */,
+				CB6C1495260F69B8001FAEEF /* StoryPrompt.swift in Sources */,
 				CBE68A6C26065927007EF422 /* AppDelegate.swift in Sources */,
+				CB6C1492260F6979001FAEEF /* StoryPromptEntry.swift in Sources */,
 				CBE68A6E26065927007EF422 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
